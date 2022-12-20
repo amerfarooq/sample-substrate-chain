@@ -806,6 +806,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "collectibles"
+version = "0.1.0"
+dependencies = [
+ "frame-support",
+ "frame-system",
+ "parity-scale-codec",
+ "scale-info",
+]
+
+[[package]]
 name = "comfy-table"
 version = "6.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3681,6 +3691,7 @@ dependencies = [
 name = "node-template-runtime"
 version = "4.0.0-dev"
 dependencies = [
+ "collectibles",
  "frame-benchmarking",
  "frame-executive",
  "frame-support",
@@ -3693,7 +3704,6 @@ dependencies = [
  "pallet-grandpa",
  "pallet-randomness-collective-flip",
  "pallet-sudo",
- "pallet-template",
  "pallet-timestamp",
  "pallet-transaction-payment",
  "pallet-transaction-payment-rpc-runtime-api",
